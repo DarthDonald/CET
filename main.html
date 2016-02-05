@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -5,91 +6,115 @@
     <link rel="shortcut icon" href="images/COT_Logo_Title.png" type="image/png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" media="(min-width: @screen-md-min)" href="css/style.css" />
 </head>
 <body>
     <header class="row">
-        <div class="col-md-3 col-xs-6 langs">
+        <div class="col-xs-6 col-sm-6 col-md-3 langs">
             <button class="btnLang activeBtnLang">УКР</button>
             <button class="btnLang">ENG</button>
-            <img src="images/COT_Logo_UKR.png" alt="" class="ukraine">
+            <img src="images/COT_Logo_UKR.png" alt="">
         </div>
-        <div class="col-md-3 presentetion">
+        <div class="col-md-3 presentetion hideMobile">
             <a href="#">Завантаж PDF-презентацію</a>
         </div>
-        <div class="col-md-6 col-xs-6 logo">
+        <div class="col-md-6 col-sm-6 col-xs-6 logo">
             <img src="images/COT_MainLogo.png" alt="">
         </div>
     </header>
     
     <div class="welcomeMessage row">
-        <div class="col-xs-6"></div>
-        <div class="col-xs-6">
+        <div class="col-xs-6 col-sm-6"></div>
+        <div class="col-xs-6 col-sm-6">
             <h4>Привіт, друже!</h4>
             <p>Ми раді бачити тебе на сторінках нашого веб-сайту! Сподіваємося, що ти знайдеш для себе якомога багато корисної інформації. Вдалого серфінгу!</p>
         </div>
     </div>
     
     <div class="menu row">
-        <div class="col-xs-4">
-            <a href="#"><div class="aboutUs">
-                <p><span class="smallLetters">ПРО</span><br><span class="bigLetters">НАС</span></p>
-            </div></a>
-            <a href="#"><div class="ourAchievements">
-                <p><span class="smallLetters">НАШІ</span><br><span class="bigLetters">ДОСЯГНЕННЯ</span></p>
-            </div></a>
-            <a href=""><div class="zno">
-                <p><span class="smallLetters">ПІДГОТОВКА ДО</span><br><span class="bigLetters">ЗОВНІШНЬОГО НЕЗАЛЕЖНОГО ОЦІНЮВАННЯ (ЗНО)</span></p>
-            </div></a>
-            <a href=""><div class="contacts">
-                <p><span class="smallLetters">НАШІ</span><br><span class="bigLetters">КОНТАКТИ</span></p>
-            </div></a>
+        <div class="col-xs-4 col-sm-4">
+            <div class="aboutUs">
+                <a href="#"><p><span class="smallLetters">ПРО</span><br><span class="bigLetters">НАС</span></p></a>
+            </div>
+            <div class="ourAchievements">
+                <a href="#"><p><span class="smallLetters">НАШІ</span><br><span class="bigLetters">ДОСЯГНЕННЯ</span></p></a>
+            </div>
+            <div class="zno">
+                <a href="#"><p><span class="smallLetters">ПІДГОТОВКА ДО</span><br><span class="bigLetters">ЗОВНІШНЬОГО НЕЗАЛЕЖНОГО ОЦІНЮВАННЯ (ЗНО)</span></p></a>
+            </div>
+            <div class="contacts">
+                <a href="#"><p><span class="smallLetters">НАШІ</span><br><span class="bigLetters">КОНТАКТИ</span></p></a>
+            </div>
         </div>
-        <div class="col-xs-8">
+        <div class="col-xs-8 col-sm-8">
             <div class="aboutUsMenu">
-                <a href=""><div>
-                    <h3>Загальна Інформація</h3>
-                    <p>ПОЗНАЙОМСЯ З НАМИ БІЛЬШ ДЕТАЛЬНО І ТИ ЗРОЗУМІЄШ НАШУ СПРАВУ</p>
-                </div></a>
-                <a href=""><div>
-                    <h3>Підрозділи</h3>
-                    <p>МИ РОЗВИВАЄМОСЯ, ІНФОРМАЦІЯ ПРО НАШІ ПІДРОЗДІЛИ ТУТ</p>
-                </div></a>
+                <div>
+                    <a href=""><h3>Загальна Інформація</h3>
+                    <p>ПОЗНАЙОМСЯ З НАМИ БІЛЬШ ДЕТАЛЬНО І ТИ ЗРОЗУМІЄШ НАШУ СПРАВУ</p></a>
+                </div>
+                <div>
+                    <a href=""><h3>Підрозділи</h3>
+                    <p>МИ РОЗВИВАЄМОСЯ, ІНФОРМАЦІЯ ПРО НАШІ ПІДРОЗДІЛИ ТУТ</p></a>
+                </div>
             </div>
             <div class="ourAchievementsMenu">
-                <a href=""><div>
-                    <h3>Проекти</h3>
-                    <p>МИ МАЄМО ВЕЛИКУ КІЛЬКІСЬ РЕАЛІЗОВАНИХ ПРОЕКТІВ ТА РОЗРОБОК</p>
-                </div></a>
-                <a href=""><div>
-                    <h3>Статистика</h3>
-                    <p>ТУТ ТИ ЗНАЙДЕШ ДАНІ, ЩО КРАСНОМОВНО СВІДЧАТЬ ПРО НАШУ РОБОТУ</p>
-                </div></a>
+                <div>
+                    <a href=""><h3>Проекти</h3>
+                    <p>МИ МАЄМО ВЕЛИКУ КІЛЬКІСЬ РЕАЛІЗОВАНИХ ПРОЕКТІВ ТА РОЗРОБОК</p></a>
+                </div>
+                <div>
+                    <a href=""><h3>Статистика</h3>
+                    <p>ТУТ ТИ ЗНАЙДЕШ ДАНІ, ЩО КРАСНОМОВНО СВІДЧАТЬ ПРО НАШУ РОБОТУ</p></a>
+                </div>
             </div>
             <div class="znoMenu">
-                <a href=""><div>
-                    <h3>Предмети</h3>
-                    <p>ПЕРЕЛІК ПРЕДМЕТІВ, ЗА ЯКИМИ МИ ЗДІЙСНЮЄМО ПІДГОТОВКУ</p>
-                </div></a>
+                <div>
+                    <a href=""><h3>Предмети</h3>
+                    <p>ПЕРЕЛІК ПРЕДМЕТІВ, ЗА ЯКИМИ МИ ЗДІЙСНЮЄМО ПІДГОТОВКУ</p></a>
+                </div>
                 <a href=""><div>
                     <h3>Методики</h3>
-                    <p>ТУТ МОЖНА ЗНАЙТИ ВСІ МЕТОДИКИ, РОЗРОБЛЕНІ НАМИ ДЛЯ ТЕБЕ</p>
-                </div></a>
+                    <p>ТУТ МОЖНА ЗНАЙТИ ВСІ МЕТОДИКИ, РОЗРОБЛЕНІ НАМИ ДЛЯ ТЕБЕ</p></a>
+                </div>
             </div>
             <div class="contactsMenu">
-                <a href=""><div>
-                    <h3>Поштова Адреса</h3>
-                    <p>НАПИШИ ЛИСТА, АБО ЗАВІТАЙ ДО НАС У ГОСТІ. А ТАКОЖ ТЕЛЕФОНУЙ</p>
-                </div></a>
-                <a href=""><div>
-                    <h3>Веб</h3>
-                    <p>FACEBOOK? LINKEDIN? ІНША СОЦІАЛЬНА МЕРЕЖА? ЗНАЙДИ НАС В ІНТЕРНЕТІ!</p>
-                </div></a>
+                <div>
+                    <a href=""><h3>Поштова Адреса</h3>
+                    <p>НАПИШИ ЛИСТА, АБО ЗАВІТАЙ ДО НАС У ГОСТІ. А ТАКОЖ ТЕЛЕФОНУЙ</p></a>
+                </div>
+                <div>
+                    <a href=""><h3>Веб</h3>
+                    <p>FACEBOOK? LINKEDIN? ІНША СОЦІАЛЬНА МЕРЕЖА? ЗНАЙДИ НАС В ІНТЕРНЕТІ!</p></a>
+                </div>
             </div>
         </div>
     </div>   
     
-    <footer>
-        
+    <footer class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6">
+            <div class="row">
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <img src="images/COT_Logo_Title.png" alt="">
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <code class="copy">&copy; Вінницька обласна
+організація "Центр
+освітніх технологій",
+2013. Усі права
+застережені
+                   </code>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <code class="copy">&copy; Vinnytsia Region
+Organisation "Center
+of Educational
+Technologies", 2013.
+All rights reserved.
+                    </code>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6"></div>
     </footer>
     
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

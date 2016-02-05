@@ -1,10 +1,19 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=latin,cyrillic);
 
-body{
+html body{
     font-family: 'Roboto Slab', serif;
+    background: #eee;
+    background: linear-gradient(to bottom, #fff, #ebebeb);
+    height: 100%;
+    width: 100%;
+    box-shadow: 60px 0 30px -20px rgba(192, 192, 192, 0.76) inset;
 }
 
 /*Main Page*/
+.hideMobile{
+    display: none;
+}
+
 header{
     height: 300px;
 }
@@ -37,9 +46,19 @@ header{
     border: 1px solid #2f4155;
 }
 
-.presentetion{
-    display:none; 
-    height: 100%
+.presentetion{ 
+    height: 100%;
+    width: 100%;
+    background: #eee;
+    box-shadow: 60px 0 30px -20px rgba(192, 192, 192, 0.76) inset;
+}
+
+.presentetion a{
+    color: #a2bad2;
+}
+
+.presentetion a:hover{
+    text-decoration: none;
 }
 
 .logo{
@@ -107,7 +126,7 @@ body .row{
     text-decoration: none;
 }
 
-a div .smallLetters{
+a .smallLetters{
     text-decoration: underline;
 }
 
@@ -120,7 +139,7 @@ a div .smallLetters{
     padding-top: 180px; 
 }
 
-a .zno{
+.zno{
     padding-top: 100px; 
 }
 
@@ -153,17 +172,43 @@ a .zno{
     text-decoration: none;
 }
 
-.col-xs-8 a div{
+.col-xs-8 div div a{
     width: 100%;
     height: 50%;
     color: #fff;
 }
 
-.col-xs-8 a div h3{
-    margin-top: 0px;
+.col-xs-8 div div a h3{
+    margin-top: 30px;
 }
 
-.col-xs-8 a div p{
+.col-xs-8 div div a p{
     margin-left: 50px;
     text-decoration: underline;
+}
+
+footer .col-xs-6{
+    height: 150px;
+    background: #eee;
+    box-shadow: 60px 0 30px -20px rgba(192, 192, 192, 0.76) inset;
+    padding-top: 30px;
+}
+
+footer .row div img{
+    height: 100px;
+}
+
+.copy{
+    font-family: 'Roboto Slab', serif;
+    background: none;
+    text-align: left;
+    color: #73777a;
+    border-radius: 0;
+    font-size: 77%;
+}
+
+@media (min-width: @screen-md-min){
+    body .row .presentetion{
+        display: inline;
+    }
 }
