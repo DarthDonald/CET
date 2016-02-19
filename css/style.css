@@ -2,30 +2,30 @@
 
 html body{
     font-family: 'Roboto Slab', serif;
-    background: #eee;
-    background: linear-gradient(to bottom, #fff, #ebebeb);
+    background: #F6F4F1;
     height: 100%;
     width: 100%;
-    box-shadow: 60px 0 30px -20px rgba(192, 192, 192, 0.76) inset;
+    font-weight: 400;
 }
 
-/*Main Page*/
 .hideMobile{
     display: none;
 }
 
+/*Main Page*/
 header{
     height: 300px;
 }
 
 .langs, .presentetion, .logo{
     padding: 3% 3%;
-    background: #eee;
-    box-shadow: 60px 0 30px -20px rgba(192, 192, 192, 0.76) inset;
+    background: #fff;
 }
 
 .langs{
-    height: 100%
+    height: 100%;
+    color: #2f4155;
+    text-decoration: underline;
 }
 
 .langs img{
@@ -49,12 +49,13 @@ header{
 .presentetion{ 
     height: 100%;
     width: 100%;
-    background: #eee;
-    box-shadow: 60px 0 30px -20px rgba(192, 192, 192, 0.76) inset;
+    background: #fff;
 }
 
 .presentetion a{
     color: #a2bad2;
+    text-decoration: underline;
+    font-size: 18px;
 }
 
 .presentetion a:hover{
@@ -93,16 +94,14 @@ body .row{
     font-size: 1em;
 }
 
-.welcomeMessage .col-xs-6{
-    background: #eee;
+.welcomeMessage .col-xs-8, .col-md-3{
+    background: #fff;
     padding: 1% 2%;
-    box-shadow: 60px 0 30px -20px rgba(192, 192, 192, 0.76) inset;
     padding-left: 5%;
 }
 
 .menu{
-    background: #eee;
-    box-shadow: 60px 0 30px -20px rgba(192, 192, 192, 0.76) inset;
+    background: #fff;
     padding: 0 10px;
 }
 
@@ -110,6 +109,7 @@ body .row{
     font-family: 'Roboto Slab', serif;
     text-align: left;
     padding: 0 0;
+    z-index: 3;
 }
 
 .menu .col-xs-4 a{
@@ -136,7 +136,7 @@ a .smallLetters{
     padding-left: 20px;
     padding-right: 10px;
     height: 250px;
-    padding-top: 180px; 
+    padding-top: 180px;
 }
 
 .zno{
@@ -144,12 +144,12 @@ a .smallLetters{
 }
 
 .aboutUsMenu, .ourAchievementsMenu, .znoMenu, .contactsMenu{
-    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.4);;
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.4);
     padding-bottom: 3px;
     padding-left: 20px;
     padding-right: 10px;
     padding-top: 10px;
-    height: 250px;   
+    height: 250px;
 }
 
 .aboutUs, .aboutUsMenu{
@@ -157,7 +157,7 @@ a .smallLetters{
 }
 
 .ourAchievements, .ourAchievementsMenu{
-    background: #ca5802;
+    background: #ec6603;
 }
 
 .zno, .znoMenu{
@@ -165,7 +165,70 @@ a .smallLetters{
 }
 
 .contacts, .contactsMenu{
-    background: #294050;
+    background: #2d4859;
+}
+
+.welcomeMessageDesktop{
+    display: none;
+}
+
+.acquaintance, .planning, .learn, .share{
+    height: 250px;
+          -webkit-transform: skewY(26deg); 
+	        -moz-transform: skewY(26deg); 
+	            -ms-transform: skewY(26deg); 
+	                -o-transform: skewY(26deg);
+	transform: skewY(26deg);
+    z-index: 2;
+}
+
+.acquaintance{
+    background: #92a7c4;
+    background-size: cover;
+}
+
+.planning{
+    background: #ec6603; 
+    background-size: cover;  
+}
+
+.learn{
+    background: #61b6db;
+    background-size: cover;  
+}
+
+.share{
+    background: #2f4155;
+    background-size: cover;  
+}
+
+ .hideMobile div div p{
+    margin: 0;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.hideMobile div div{
+    padding: 100px 30px;
+    transform: skewY(-26deg);
+        -webkit-transform: skewY(-26deg); 
+	        -moz-transform: skewY(-26deg); 
+	            -ms-transform: skewY(-26deg); 
+	                -o-transform: skewY(-26deg);
+    color: #fff;
+    font-weight: 700;
+    opacity: 0;
+}
+
+.hideMobile div img{
+    transform: skewY(-26deg);
+        -webkit-transform: skewY(-26deg); 
+	        -moz-transform: skewY(-26deg); 
+	            -ms-transform: skewY(-26deg); 
+	                -o-transform: skewY(-26deg);
+    height: 75px;
+    margin: 80px auto;
+    opacity: 1;
 }
 
 .col-xs-8 a:hover{
@@ -187,18 +250,17 @@ a .smallLetters{
     text-decoration: underline;
 }
 
-footer .col-xs-6{
-    height: 150px;
-    background: #eee;
-    box-shadow: 60px 0 30px -20px rgba(192, 192, 192, 0.76) inset;
+footer .col-xs-4, .col-xs-8{
+    height: 300px;
+    background: #fff;
     padding-top: 30px;
 }
 
-footer .row div img{
+footer .col-xs-4 img{
     height: 100px;
 }
 
-.copy{
+.row .col-xs-6 p{
     font-family: 'Roboto Slab', serif;
     background: none;
     text-align: left;
@@ -207,8 +269,89 @@ footer .row div img{
     font-size: 77%;
 }
 
-@media (min-width: @screen-md-min){
-    body .row .presentetion{
+@media (min-width: 992px){
+    body{
+        padding: auto auto;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+    
+    .main{
+        max-width: 975px;
+        margin: auto;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    
+    .hideMobile{
         display: inline;
+    }
+    
+    .aboutUsMenu, .ourAchievementsMenu, .znoMenu, .contactsMenu{
+        height: 250px;
+    }
+    
+    header{
+        background: #fff;
+    }
+    
+    .langs, .presentetion, .logo{
+        padding: 30px 0;
+    }
+    
+    .welcomeMessage{
+        display: none;
+    }
+    
+    .welcomeMessageDesktop{
+        display: inline;
+    }
+    
+    .welcomeMessageDesktop h4{
+        margin-left: 30px;
+        color: #2f4155;
+        font-family: 'Roboto Slab', serif;
+        text-align: left;
+        font-size: 20px;
+    }
+
+    .welcomeMessageDesktop p{
+        color: #61b6db;  
+        font-family: 'Roboto Slab', serif;
+        text-align: left;
+        font-size: 0.9em;
+        margin-left: 30px;
+        margin-right: 30px;
+        padding-bottom: 15px;
+        width: 455px;
+    }
+    
+    .menu{
+        padding: 0 0px;
+    }
+    
+    .menu .col-xs-8{
+        background: #fff;
+        padding-top: 0px; 
+        padding-bottom: 60px;
+    }
+    
+    .menu .hideMobile{
+        background: #fff;
+        padding: 0;
+        padding-top: 60px;
+        z-index: 3;
+    }
+    
+    .zno{
+        padding-top: 80px;
+    }
+    
+    footer .col-md-6{
+        padding-top: 50px;
+    }
+    
+    footer .col-md-6 img{
+        margin-top: 20px;
     }
 }
