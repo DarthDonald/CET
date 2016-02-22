@@ -21,49 +21,10 @@ header{
     height: 300px;
 }
 
-.langs, .presentetion, .logo{
+.welcomeMessage, .logo{
     padding: 3% 3%;
     background: #fff;
-}
-
-.langs{
-    height: 100%;
-    color: #2f4155;
-    text-decoration: underline;
-}
-
-.langs img{
-    width: 80%;
-}
-
-.btnLang{
-    background: none;
-    border-radius: 0;
-    padding: 5px 5px;
-    border: none;
-    color: #2f4155;
-    text-decoration: underline;
-    font-size: 20px;
-}
-
-.langs .activeBtnLang{
-    border: 1px solid #2f4155;
-}
-
-.presentetion{ 
-    height: 100%;
-    width: 100%;
-    background: #fff;
-}
-
-.presentetion a{
-    color: #a2bad2;
-    text-decoration: underline;
-    font-size: 18px;
-}
-
-.presentetion a:hover{
-    text-decoration: none;
+    height: 300px
 }
 
 .logo{
@@ -71,7 +32,7 @@ header{
 }
 
 .logo img{
-    margin: 41px auto;
+    margin: 0px auto;
     width: 100%;
 }
 
@@ -81,163 +42,47 @@ body .row{
     margin: 0;
 }
 
-.welcomeMessage div{
-    height: 150px;
+.welcomeMessage{
+    height: 200px
 }
 
-.welcomeMessage div h4{
+.welcomeMessage h4{
     color: #2f4155;
     font-family: 'Roboto Slab', serif;
     text-align: left;
+    margin-left: 70px;
 }
 
-.welcomeMessage div p{
+.welcomeMessage p{
     color: #61b6db;  
     font-family: 'Roboto Slab', serif;
     text-align: left;
     font-size: 1em;
-}
-
-.welcomeMessage .col-xs-8, .col-md-3{
-    background: #fff;
-    padding: 1% 2%;
-    padding-left: 5%;
+    width: 70%;
+    margin-left: 70px;
 }
 
 .menu{
-    background: #fff;
+    background: #2f4155;
     padding: 0 10px;
 }
 
-.menu .col-xs-4, .menu .col-xs-8{
-    font-family: 'Roboto Slab', serif;
-    text-align: left;
-    padding: 0 0;
-    z-index: 3;
-}
-
-.menu .col-xs-4 a{
+.menu a{
     color: #fff;
     font-weight: 600;
+    font-size: 18px;
 }
 
-.menu .col-xs-4 a:hover{
+.menu a:hover{
     text-decoration: none;
 }
 
-.bigLetters{
-    font-size: 26px;
-    text-decoration: none;
+.menu .nav{
+    margin-top: -100px;
 }
 
-a .smallLetters{
-    text-decoration: underline;
-}
-
-.aboutUs, .ourAchievements, .zno, .contacts{
-    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.4);
-    padding-bottom: 3px;
-    padding-left: 20px;
-    padding-right: 10px;
-    height: 250px;
-    padding-top: 180px;
-}
-
-.zno{
-    padding-top: 100px; 
-}
-
-.aboutUsMenu, .ourAchievementsMenu, .znoMenu, .contactsMenu{
-    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.4);
-    padding-bottom: 3px;
-    padding-left: 20px;
-    padding-right: 10px;
-    padding-top: 10px;
-    height: 250px;
-    text-align: left;
-}
-
-.aboutUs, .aboutUsMenu, .aboutUsI{
-   background: #92a7c4; 
-}
-
-.ourAchievements, .ourAchievementsMenu, .ourAchievementsI{
-    background: #ec6603;
-}
-
-.zno, .znoMenu, .znoI{
-    background: #0ba1d6;
-}
-
-.contacts, .contactsMenu, .contactsI{
-    background: #2d4859;
-}
-
-.welcomeMessageDesktop{
-    display: none;
-}
-
-.acquaintance, .planning, .learn, .share{
-    height: 250px;
-          -webkit-transform: skewY(26deg); 
-	        -moz-transform: skewY(26deg); 
-	            -ms-transform: skewY(26deg); 
-	                -o-transform: skewY(26deg);
-	transform: skewY(26deg);
-    z-index: 2;
-}
-
-.acquaintance{
-    background: #92a7c4;
-    background-size: cover;
-}
-
-.planning{
-    background: #ec6603; 
-    background-size: cover;  
-}
-
-.learn{
-    background: #61b6db;
-    background-size: cover;  
-}
-
-.share{
-    background: #2f4155;
-    background-size: cover;  
-}
-
- .hideMobile div div p{
-    margin: 0;
-    font-size: 25px;
-    font-weight: 700;
-}
-
-.hideMobile div div{
-    padding: 100px 30px;
-    transform: skewY(-26deg);
-        -webkit-transform: skewY(-26deg); 
-	        -moz-transform: skewY(-26deg); 
-	            -ms-transform: skewY(-26deg); 
-	                -o-transform: skewY(-26deg);
-    color: #fff;
-    font-weight: 700;
-    opacity: 0;
-}
-
-.hideMobile div img{
-    transform: skewY(-26deg);
-        -webkit-transform: skewY(-26deg); 
-	        -moz-transform: skewY(-26deg); 
-	            -ms-transform: skewY(-26deg); 
-	                -o-transform: skewY(-26deg);
-    height: 75px;
-    margin: 80px auto;
-    opacity: 1;
-}
-
-.col-xs-8 a:hover{
-    text-decoration: none;
+.menu .nav li a{
+    border-radius: 0;
 }
 
 .col-xs-8 div div a{
@@ -274,86 +119,24 @@ footer .col-xs-4 img{
     font-size: 77%;
 }
 
-/*About Us*/
-
-.information .col-md-9{
-    height: 1000px;
-    padding: 0;
+.information{
+    height: 100%;
+    padding: 20px 40px;;
     color:  #2f4155;
     margin-top: -1px;
 }
 
-.information .col-md-9 p{
+.information h1, .information h3{
+    text-align: center;
+}
+
+.information p{
     text-align: left;
     padding: 10px 20px;
 }
 
-.information .informationMenu{
-    font-family: 'Roboto Slab', serif;
-    text-align: left;
-    padding: 0 0;
-    z-index: 3;
-}
-
-.informationMenu a{
-    color: #fff;
-    text-align: left;
-}
-
-.informationMenu{
-    background: #fff;
-}
-
-.informationMenu a:hover{
-    color: #fff;
-    text-decoration: none;
-}
-
-.aboutUsI, .ourAchievementsI, .znoI, .contactsI{
-    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.4);
-    height: 250px;
-}
-
-.informationMenu .row .col-md-10{
-    padding-bottom: 3px;
-    padding-left: 20px;
-    padding-top: 180px;
-}
-
-.information .informationMenu .znoI .col-md-10{
-    padding-top: 70px;
-}
-
-.informationMenu .row .col-md-2{
-    opacity: 1;
-    background: none;
-    color: #fff;
-    margin: 85px 0;
-    
-}
-
-.informationMenu .row .col-md-2:hover{
-    cursor: pointer;
-    opacity: 0.5;
-}
-
-.drop{
-    width: 400px;
-    margin-left: 240px;
-    margin-top: -250px;
-    opacity: 1;
-    display: none;
-}
-
-.drop a{
-      position: static;  
-}
-
-/*Departments*/
-
-.main .information .wonderfulMoment{
-    height: 2450px;
-    padding: 30px 45px;
+.col-md-4 .carousel .carousel-inner .item img{
+    height: 350px;
 }
 
 .table div{
@@ -375,13 +158,43 @@ footer .col-xs-4 img{
     margin-top: 5px;
 }
 
+.art i{
+    color: #2f4155;
+    font-size: 20px;
+}
+
 .artAddress{
     margin-top: 150px;
     border: 3px solid #92a7c4;
 }
 
-.wonderfulMoment .artAddress p{
+.information .col-md-9 .artAddress p{
     text-align: center;
+}
+
+/*Our Achievements*/
+
+.row .col-sm-4 .carousel .carousel-control{
+    width: 10%;
+    height: 100%;
+    background: none;
+    color: #2f4155;
+}
+
+.carousel .carousel-inner .item img{
+    margin: auto auto;
+}
+
+/*Contatcs*/
+
+iframe{
+    width: 600px;
+    height: 250px;
+}
+
+.fa-4x{
+    color: #2f4155;
+    margin: 0 20px;
 }
 
 @media (min-width: 992px){
@@ -402,64 +215,17 @@ footer .col-xs-4 img{
         display: inline;
     }
     
-    .aboutUsMenu, .ourAchievementsMenu, .znoMenu, .contactsMenu{
-        height: 250px;
-    }
-    
     header{
         background: #fff;
+        height: 200px;
     }
     
-    .langs, .presentetion, .logo{
+    .logo{
         padding: 30px 0;
     }
     
-    .welcomeMessage{
-        display: none;
-    }
-    
-    .welcomeMessageDesktop{
-        display: inline;
-    }
-    
-    .welcomeMessageDesktop h4{
-        margin-left: 30px;
-        color: #2f4155;
-        font-family: 'Roboto Slab', serif;
-        text-align: left;
-        font-size: 20px;
-    }
-
-    .welcomeMessageDesktop p{
-        color: #61b6db;  
-        font-family: 'Roboto Slab', serif;
-        text-align: left;
-        font-size: 0.9em;
-        margin-left: 30px;
-        margin-right: 30px;
-        padding-bottom: 15px;
-        width: 455px;
-    }
-    
-    .menu{
+    .main .menu{
         padding: 0 0px;
-    }
-    
-    .menu .col-xs-8{
-        background: #fff;
-        padding-top: 0px; 
-        padding-bottom: 60px;
-    }
-    
-    .menu .hideMobile{
-        background: #fff;
-        padding: 0;
-        padding-top: 60px;
-        z-index: 3;
-    }
-    
-    .zno{
-        padding-top: 80px;
     }
     
     footer .col-md-6{
@@ -468,5 +234,13 @@ footer .col-xs-4 img{
     
     footer .col-md-6 img{
         margin-top: 20px;
+    }
+    
+    .informationMenu .drop{
+        margin-left: 244px;
+    }
+    
+    iframe{
+        width: 600px;
     }
 }
