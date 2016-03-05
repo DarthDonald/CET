@@ -17,6 +17,7 @@ html body{
 }
 
 /*Main Page*/
+
 header{
     height: 300px;
 }
@@ -62,9 +63,8 @@ body .row{
     margin-left: 70px;
 }
 
-.menu{
+html body .main .menu{
     background: #2f4155;
-    padding: 0 10px;
 }
 
 .menu a{
@@ -83,12 +83,33 @@ body .row{
 
 .menu .nav li a{
     border-radius: 0;
+    box-shadow: 0 6px 5px 0px rgba(0, 0, 0, 0.09),
+                0 -6px 5px 0px rgba(0, 0, 0, 0.09);
+}
+
+.main .menu .nav .dropdown{
+    background: #2f4155;
+    color: #fff;
+}
+
+.main .menu .nav .dropdown:hover{
+    color: #2f4155;
+    background: #eee;
 }
 
 .col-xs-8 div div a{
     width: 100%;
     height: 50%;
     color: #fff;
+}
+
+.main .menu .nav .dropdown .dropdown-menu li a{
+    box-shadow: none;
+    color: #2f4155;
+}
+
+.main .menu .nav .dropdown .dropdown-menu{
+    border-radius: 0;
 }
 
 .col-xs-8 div div a h3{
@@ -101,7 +122,7 @@ body .row{
 }
 
 footer .col-xs-4, .col-xs-8{
-    height: 300px;
+    height: 200px;
     background: #fff;
     padding-top: 30px;
 }
@@ -135,8 +156,21 @@ footer .col-xs-4 img{
     padding: 10px 20px;
 }
 
+.information img{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.carousel{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin-bottom: 10px;
+}
+
+.col-md-4 .carousel .carousel-inner .item{
+    height: 355px;
+}
+
 .col-md-4 .carousel .carousel-inner .item img{
-    height: 350px;
+    width: 100%;
 }
 
 .table div{
@@ -153,8 +187,12 @@ footer .col-xs-4 img{
     text-align: left;
 }
 
+.art .col-md-4{
+    padding: 10px 10px;
+}
+
 .art img{
-    height: 270px;
+    width: 100%;;
     margin-top: 5px;
 }
 
@@ -165,11 +203,37 @@ footer .col-xs-4 img{
 
 .artAddress{
     margin-top: 150px;
-    border: 3px solid #92a7c4;
+    padding: 10px 0;
+/*    border: 3px solid #92a7c4;*/
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
+
+.artAddress h3, .artAddress p{
+    text-align: center;
+} 
 
 .information .col-md-9 .artAddress p{
     text-align: center;
+}
+
+#carousel{
+    box-shadow: 0 6px 5px 0px rgba(0, 0, 0, 0.09);
+}
+
+#carousel .carousel-inner .item{
+    width: 100%;
+    height: 500px;
+}
+
+#carousel .carousel-inner .item img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: auto;
 }
 
 /*Our Achievements*/
@@ -185,16 +249,25 @@ footer .col-xs-4 img{
     margin: auto auto;
 }
 
+.information ul li h4{
+    text-align: left;
+}
+
 /*Contatcs*/
 
 iframe{
     width: 600px;
     height: 250px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .fa-4x{
     color: #2f4155;
     margin: 0 20px;
+}
+
+.adress .col-md-4, .adress .col-md-8{
+    height: 275px;
 }
 
 @media (min-width: 992px){
@@ -229,7 +302,7 @@ iframe{
     }
     
     footer .col-md-6{
-        padding-top: 50px;
+        padding-top: 30px;
     }
     
     footer .col-md-6 img{
