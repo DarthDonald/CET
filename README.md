@@ -6,4 +6,4 @@ RUS: Сайт для общественной организации "Центр
 
 ENG: The site for the NGO "Center for Educational Technologies"
 
-http://cot.vn.ua/main.html
+http://cot.vn.ua/
